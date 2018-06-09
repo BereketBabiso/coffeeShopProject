@@ -4,16 +4,18 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import edu.mum.coffee.domain.Order;
 import edu.mum.coffee.domain.Person;
 import edu.mum.coffee.domain.Product;
+import edu.mum.coffee.domain.User;
 
-public interface UserRepository extends JpaRepository<Order, Integer>{
+@Repository
+public interface UserRepository extends JpaRepository<User, Integer>{
 	
-	List<Order> findDistinctOrderByOrderLines_Product(Product product);
-	List<Order> findOrderByPerson(Person person);
-	List<Order> findOrderByOrderDateBetween(Date minDate, Date maxDate);
+	
+	public List<User> findByUsername(String username);
 	
 
 }
