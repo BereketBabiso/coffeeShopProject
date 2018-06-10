@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<h1 id="habesha1">Friends Coffee</h1>
+	<h1 id="habesha1">Friends Coffee <i class="fa fa-coffee" style="font-size:24px;color:white" aria-hidden="true"></i></h1>
 	
 	You can choose any presentation framework that could be integrated with
 	Spring
