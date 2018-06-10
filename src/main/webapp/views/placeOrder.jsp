@@ -11,14 +11,14 @@
 
 	<a href="<c:url value="/logout" />"> Now logout </a>
 
-	<form action="" method="post">
+	<form action="placeOrder" method="post">
 		<table>
 			<tr>
 				<td>Select Product: </td>
 				<td>
 					<select name="productname">
-						<c:forEach var="product" items="${products}">
-							<option>${product.productName}</option>
+						<c:forEach var="productName" items="${productNames}">
+							<option>${productName}</option>
 						</c:forEach>
 					
 					</select>
@@ -29,8 +29,8 @@
 				<td>Description: </td>
 				<td>
 					<select name="desciption">
-						<c:forEach var="product" items="${products}">
-							<option>${product.description}</option>
+						<c:forEach var="discr" items="${description}">
+							<option>${discr}</option>
 						</c:forEach>
 					</select>
 				
@@ -50,6 +50,8 @@
 				
 			</tr>
 		</table>
+		
+		<input type="submit" value="order">
 	
 	</form>
 

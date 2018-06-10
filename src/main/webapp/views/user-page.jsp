@@ -11,7 +11,7 @@
 <h3>User Welcome ${person.firstName}</h3>
 <a href="<c:url value="/logout" />"> Now logout </a>
 <hr/>
-<h3><a href="update-profile" >Update Profile</a></h3>
+<h3><a href="updateprofile" >Update Profile</a></h3>
 <h3><a href="placeOrder" >Place Order</a></h3>
 <hr/>
 

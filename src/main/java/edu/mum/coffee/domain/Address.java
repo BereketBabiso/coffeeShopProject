@@ -46,5 +46,8 @@ public class Address {
 	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
+	public int getId() {
+		return this.id;
+	}
 
 }
